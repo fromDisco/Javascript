@@ -1,0 +1,16 @@
+1. install npm (if not installed)
+2. install typescript and ts-node (if not installed)
+	'npm install -g typescript ts-node' 
+3. install nodemon and concurrently (if not installed)
+	nodemon: looks for changes in folder
+	concurrently: run multiple scripts at the same time
+	'npm install nodemon concurrently'
+3. init project in project folder
+	'npm init -y'
+	sets up 'package.json' 
+	to configure nodemon and concurrently see package.json under 'scripts: {}' in this folder
+
+4. install axios (if needed)
+	'npm install axios'
+5. install parcel-bundler (render .ts in browser)
+	npm install -g parcel-bundler

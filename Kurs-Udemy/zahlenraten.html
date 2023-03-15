@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let guessNumber = Math.floor(Math.random() * 100) + 1; 
+        let answer;
+        console.log(guessNumber);
+
+        answer = prompt("Zahl zwischen 1 und 100");
+
+        while (answer != guessNumber) {
+
+            if (answer > guessNumber) {
+                answer = prompt("Die Zahl ist kleiner als: " + answer + ". Neuer Versuch!");
+            } 
+            if (answer < guessNumber) {
+                answer = prompt("Die Zahl ist größer als: " + answer + ". Neuer Versuch!");
+            }
+        }
+
+        alert("Richtig. Die Zahl ist: " + guessNumber);
+            
+    </script>
+</body>
+</html>
